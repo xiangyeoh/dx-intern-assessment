@@ -2,7 +2,6 @@
 
 Task 1:
 This is a simple counter app
-
 There are a few bugs with it which you are required to fix
 
 Expected outcome:
@@ -10,12 +9,10 @@ Expected outcome:
 2. The value should not give a negative value (eg: -5, -10, -100)
 3. The reset button should reset the value to 0
 
-# Simple Weight Converter
-
 Task 2:
 Create a weight converter app
 
-# Expected
+Expected outcome:
 1. Ask for user input in Kilogram (Kg), convert to Pound and Milligram at the same time
 2. Able to show converted values
 
