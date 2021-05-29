@@ -1,24 +1,24 @@
 <!--
 Candidate name : Yeoh Kai Xiang
 Remarks : After trying for several times, only compressed file of type "WinRAR ZIP Archive"
-          (created with archive option: Create solid archive) is suitable to be used in this 
-          website because PHP had provided an object, which is ZipArchive which does not 
+          (created with archive option: Create solid archive) is suitable to be used in this
+          website because PHP had provided an object, which is ZipArchive which does not
           accept file with type "WinRAR archive".
 -->
 
 <?php
-if (isset($_POST["btn_zip"])) {
 
-  //---------------------------------------------------------------------------------------
-  //This code section is used to remove all the previous images stored in the upload folder
-  $files = scandir('upload/');
-  foreach ($files as $file) {
-    if (strpos($file, 'jpg') !== false || strpos($file, 'png')) {
-      unlink('upload/' . $file);
-    }
+//---------------------------------------------------------------------------------------
+//This code section is used to remove all the previous images stored in the upload folder
+$files = scandir('upload/');
+foreach ($files as $file) {
+  if (strpos($file, 'jpg') !== false || strpos($file, 'png')) {
+    unlink('upload/' . $file);
   }
-  //----------------------------------------------------------------------------------------
+}
+//----------------------------------------------------------------------------------------
 
+if (isset($_POST["btn_zip"])) {
   $output = '';
 
   //check if files uploaded exists
