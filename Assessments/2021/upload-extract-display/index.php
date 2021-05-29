@@ -156,7 +156,7 @@ if (isset($_POST["btn_zip"])) {
       }
       ?>
       <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" enctype="multipart/form-data">
-        <input type="file" name="zip_file" id="input">
+        <input type="file" name="zip_file" id="input" accept=".zip">
         <input type="submit" value="Upload" name="btn_zip" id="btn_submit">
       </form>
     </div>

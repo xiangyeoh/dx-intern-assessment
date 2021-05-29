@@ -1,0 +1,6 @@
+## Explanation
+Firstly, the upload only accept extension with .zip extension, else the upload button will be disabled. PHP is used in this Assessment. By using ```POST``` method, I get the ZIP file uploaded to the server. ```$_FILES['zip_file']['name'] != ''``` is used to check whether the uploaded file exists or not. If exist, ```move_uploaded_file($_FILES['zip_file']['tmp_name'], $location``` is used to move the zip file to a pre created folder where ```$location``` is the path to it. ```$zip->open($location)``` is used to open the zip file and ```$zip->extractTo($path)``` to extract it. ```$files = scandir($path);``` is used to scan through the folder and look for images with extension .jps and .png. If they exists, they are appended to the html and displayed as image in ```<img>``` tag.
+
+At the starting of the code, ```unlink('upload/' . $file);``` is used to remove every file in the folder so that a new operation and begin without displaying the old images.
+
+Please be noted that only zip file with type ```WinRAR ZIP Archive``` is able to be extracted using this website (created with archive option: Create solid archive), zip file with type ```WinRAR archive``` couldn't be extracted using it.
