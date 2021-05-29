@@ -2,7 +2,7 @@
 
 Hi,
 
-## counter and weight converter:
+## Counter and weight converter
 Click [here](http://counter-weight-converter-digix.epizy.com/) to navigate to my first task demo.
 
 
